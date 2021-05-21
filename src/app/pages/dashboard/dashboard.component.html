@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <app-pagetitle title="Dashboard" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+
+  <div class="row">
+    <div class="col-xl-8">
+      
+      <!-- end row -->
+
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">Data Users</h4>
+          <div>
+            <apx-chart dir="ltr" class="apex-charts" [series]="revenueChart.series" [chart]="revenueChart.chart"
+              [legend]="revenueChart.legend" [colors]="revenueChart.colors" [labels]="revenueChart.labels"
+              [stroke]="revenueChart.stroke" [plotOptions]="revenueChart.plotOptions">
+            </apx-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  <!-- end row -->
+
+  
+  <!-- end row -->
+
+  
+  <!-- end row -->
+</div>

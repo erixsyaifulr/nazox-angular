@@ -29,6 +29,8 @@ import { ChartModule } from './chart/chart.module';
 import { FormModule } from './form/form.module';
 import { TablesModule } from './tables/tables.module';
 import { MapsModule } from './maps/maps.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -59,7 +61,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     TablesModule,
     MapsModule,
     LeafletModule,
-    WidgetModule
+    WidgetModule,
+    NgbModule,
+    NgbPaginationModule
   ],
   providers: [
     {
